@@ -1,0 +1,2 @@
+main-class: main.Main
+class-path: bin/
