@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 class Main{
 
 	public static void execute(SomeInterface someInterface){
-		someInterface.someMethod();
+		someInterface.getInfo();
 	}
 
 	public static void main(String[] args){
@@ -12,14 +12,14 @@ class Main{
 	
 		SomeInterface anonymousClass = new SomeInterface() {
 			@Override
-			public void someMethod() {
+			public void getInfo() {
 				System.out.println("Anonymous class");
 			}
 		};
 		
 		execute(() -> System.out.println("Lambda"));
 
-		anonymousClass.someMethod();
+		anonymousClass.getInfo();
 /*		
 		Main main = new Main();
 		Main.InnerClass innerClass = main.new InnerClass();
@@ -46,6 +46,6 @@ class Main{
 */	}
 
 	public interface SomeInterface {
-		public void someMethod();
+		public void getInfo();
 	}
 }
