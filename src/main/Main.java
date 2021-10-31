@@ -1,7 +1,9 @@
 package main;
-import static org.junit.Assert.*;
-class Main{
 
+import static org.junit.Assert.*;
+
+class Main{
+	
 	public static void execute(SomeInterface someInterface){
 		someInterface.getInfo();
 	}
@@ -48,4 +50,5 @@ class Main{
 	public interface SomeInterface {
 		public void getInfo();
 	}
+	
 }
