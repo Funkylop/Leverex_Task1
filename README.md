@@ -1,13 +1,13 @@
 # Leverex_Task1
 
 # 1
-  For compile of Main.java create src/main dir, then open cmd in this dir and enter: javac -d ../../bin Main.java.
-  Then launch compiled Main.class in the task1 dir with command: java -classpath ./bin main.Main.
+  To compile Main.java create src/main dir, then open cmd in this dir and enter: javac -d ../../bin Main.java.
+  Run compilation Main.class in task1 dir with the command: java -classpath ./bin main.Main.
 # 2
-  In task1 dir u should enter next commands:
+  In task1 dir u must enter the following commands:
    1. jar -cmf manifest.mf main.jar -C bin .
    2. java -jar main.jar
-  and u should get the "Hello world" string in the console as in the 1st point.
+  and u should get the string "Hello world" in the console as in the 1st point.
  # 3
   1. Download lib(for example: junit)
   2. Open src/main, enter following command: javac -cp .;"D:\Leverex\task1\lib\junit-4.13.2.jar" -d ../../bin Main.java
